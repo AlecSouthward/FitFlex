@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import '../CSS/Products.css'
 
+const API_URL = process.env.API_URL || 'http://localhost:8080'
+
 // Component to render the data of a product
 const Product = ({ data }) => (
     <div className="product">
@@ -36,7 +38,7 @@ const Products = () => {
     // Sends a GET request to the api for
     // the products and stores it in products
     useEffect(() => {
-        fetch("http://localhost:8080/api/products")
+        fetch(`${API_URL}/api/products`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Network response was not ok: ${response.statusText}`);

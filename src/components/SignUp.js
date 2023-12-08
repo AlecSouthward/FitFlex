@@ -1,8 +1,10 @@
 import '../CSS/SignUp.css'
 
+const API_URL = process.env.API_URL || 'http://localhost:8080'
+
 const SignUp = () => {
     const handleSignUp = (event) => {
-        fetch("http://localhost:8080/api/users/signup", {
+        fetch(`${API_URL}/api/users/signup`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

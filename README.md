@@ -14,7 +14,7 @@ FitFlex is a dynamic full-stack web application developed using the MERN (MongoD
 
 ## Features
 
-- **Public Website:** The public website can be found **[here](https://fit-flex-04679b9ca957.herokuapp.com/)**.
+- **Public Website:** The public website can be found **[here](https://fit-flex-r277.onrender.com)**.
 - **User Authentication:** Secure sign-in and sign-up functionality for users.
 - **Product Showcase:** Browse a curated selection of top-quality fitness gear.
 
@@ -79,7 +79,7 @@ The FitFlex website has been deployed to Heroku, with both the client and server
 
 ## Usage
 
-1. Visit the FitFlex **[website](https://fit-flex-04679b9ca957.herokuapp.com/)**.
+1. Visit the FitFlex **[website](https://fit-flex-r277.onrender.com)**.
 2. Explore the different pages: About, Contact, Home, Sign In, Sign Up, Products, and the Admin page for product management.
 3. Enjoy a seamless fitness shopping experience!
 

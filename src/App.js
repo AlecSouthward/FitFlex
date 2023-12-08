@@ -13,11 +13,13 @@ import NoPage from './components/NoPage'
 import './CSS/Footer.css'
 import './CSS/Navbar.css'
 
+const API_URL = process.env.API_URL || 'http://localhost:8080'
+
 // Component for the Navbar
 const Nav = () => {
   const [user, setUser] = useState('')
 
-  fetch(`http://localhost:8080/api/users/${localStorage.getItem('user')}`)
+  fetch(`${API_URL}/api/users/${localStorage.getItem('user')}`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.statusText}`);

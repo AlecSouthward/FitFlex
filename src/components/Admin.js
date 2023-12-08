@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import '../CSS/Admin.css'
 
+const API_URL = process.env.API_URL || 'http://localhost:8080'
+
 // Functional component representing the Admin page
 const Admin = () => {
     // State variables to manage products and the product being edited
@@ -10,7 +12,7 @@ const Admin = () => {
 
     // useEffect hook to fetch and display all products when the component mounts
     useEffect(() => {
-        fetch('http://localhost:8080/api/products/')
+        fetch(`${API_URL}/api/products/`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Network response was not ok: ${response.statusText}`);
@@ -26,7 +28,7 @@ const Admin = () => {
         const { name, price, desc, img } = event.target;
 
         // Sending a PUT request to update the product
-        fetch('http://localhost:8080/api/products/' + editingProduct, {
+        fetch(`${API_URL}/api/products/` + editingProduct, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -56,7 +58,7 @@ const Admin = () => {
     // Function to handle the deletion of a product
     const handleDelete = (id) => {
         // Sending a DELETE request to delete the product
-        fetch('http://localhost:8080/api/products/' + id, {
+        fetch(`${API_URL}/api/products/` + id, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -80,7 +82,7 @@ const Admin = () => {
         const { name, price, desc, img } = event.target;
 
         // Sending a POST request to create a new product
-        fetch('http://localhost:8080/api/products/', {
+        fetch(`${API_URL}/api/products/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
