@@ -1,0 +1,33 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.subject {
+    margin: 10px 35% 10px 35%;
+    padding: 10px 10px 10px 10px;
+    font-size: large;
+}
+
+.message {
+    margin: 10px 15% 10px 15%;
+    padding: 10px 10px 60px 10px;
+    font-size: large;
+    word-break: break-all;
+}
+
+.submit {
+    padding: 10px 0px 10px 0px;
+    margin: 20px 40% 100px 40%;
+}
+
+.contact input {
+    border-radius: 15px;
+    border: solid lightgrey 2px;
+}
+
+.contact p {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,39 @@
+/* Styling for the products during editing them */
+.admin-product-editing {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-product-editing input {
+    min-width: 200px;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.admin-product-editing textarea {
+    min-width: 500px;
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+.admin-product-editing button {
+    min-width: 100px;
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+/* Styling for the products before editing them */
+.admin-product {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-product img {
+    max-width: 20%;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
