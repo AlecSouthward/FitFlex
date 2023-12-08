@@ -99,7 +99,7 @@ const Footer = () => (
   // Styling to stick the footer 
   // at the bottom of the page
   <div className='footer-styling'>
-
+    <h1>{process.env.API_URL}</h1>
     <p>Copyright 2023 ©</p>
   </div>
 );
